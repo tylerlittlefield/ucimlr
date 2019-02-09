@@ -27,7 +27,7 @@ total_datasets <- length(datasets$results[, "Item"])
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of `ucimlr` is to give R users easy access to datasets found at the **U**niversity of **I**rvine's **M**achine **L**earning **R**epository. The benefits of using this package are:
+The goal of `ucimlr` is to give R users easy access to datasets found at the [**U**niversity of **I**rvine's **M**achine **L**earning **R**epository](https://archive.ics.uci.edu/ml/index.php). The benefits of using this package are:
 
 1. Ease of access
 2. Clean data

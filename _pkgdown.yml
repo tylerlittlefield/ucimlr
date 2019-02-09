@@ -15,6 +15,7 @@ reference:
   - '`badges`'
   - '`car_eval`'
   - '`cpu`'
+  - '`flags`'
   - '`forest_fires`'
   - '`liver`'
   - '`meta`'

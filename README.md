@@ -8,8 +8,9 @@
 <!-- badges: end -->
 
 The goal of `ucimlr` is to give R users easy access to datasets found at
-the **U**niversity of **I**rvine’s **M**achine **L**earning
-**R**epository. The benefits of using this package are:
+the [**U**niversity of **I**rvine’s **M**achine **L**earning
+**R**epository](https://archive.ics.uci.edu/ml/index.php). The benefits
+of using this package are:
 
 1.  Ease of access
 2.  Clean data
@@ -25,13 +26,13 @@ structure is as follows:
 3.  Everything is `stringAsFactors = FALSE`
 
 Currently, there are 468 datasets available at the official repository
-and 15 available in `ucimlr`. These numbers update every time the
+and 17 available in `ucimlr`. These numbers update every time the
 README.Rmd is reknit.
 
 ## Installation
 
 Keep in mind that this is a data package and as of now the package is
-~2.12 MB. You can install `ucimlr` from GitHub with
+~3.42 MB. You can install `ucimlr` from GitHub with
 [`devtools`](https://github.com/r-lib/devtools):
 
 ``` r

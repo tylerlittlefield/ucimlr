@@ -16,3 +16,5 @@ Imports:
     tibble
 Suggests: 
     testthat
+URL: https://github.com/tyluRp/ucimlr
+BugReports: https://github.com/tyluRp/ucimlr/issues

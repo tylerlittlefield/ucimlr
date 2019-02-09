@@ -5,6 +5,12 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.org/tyluRp/ucimlr.svg?branch=master)](https://travis-ci.org/tyluRp/ucimlr)
+[![Codecov test
+coverage](https://codecov.io/gh/tyluRp/ucimlr/branch/master/graph/badge.svg)](https://codecov.io/gh/tyluRp/ucimlr?branch=master)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/tyluRp/ucimlr?branch=master&svg=true)](https://ci.appveyor.com/project/tyluRp/ucimlr)
 <!-- badges: end -->
 
 The goal of `ucimlr` is to give R users easy access to datasets found at
@@ -32,7 +38,7 @@ README.Rmd is reknit.
 ## Installation
 
 Keep in mind that this is a data package and as of now the package is
-~3.42 MB. You can install `ucimlr` from GitHub with
+~3.52 MB. You can install `ucimlr` from GitHub with
 [`devtools`](https://github.com/r-lib/devtools):
 
 ``` r

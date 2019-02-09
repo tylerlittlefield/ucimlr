@@ -1,0 +1,50 @@
+#' Wine Quality
+#'
+#' This dataset is related to red and white vinho verde wine samples, from the
+#' north of Portugal. The goal is to model wine quality based on
+#' physicochemical tests, see: http://www3.dsi.uminho.pt/pcortez/wine/. Due to
+#' privacy and logistic issues, only physicochemical (inputs) and sensory (the
+#' output) variables are available (e.g. there is no data about grape types,
+#' wine brand, wine selling price, etc.).
+#'
+#' @format A data frame with 6497 observations on the following 13 variables.
+#' \enumerate{
+#'   \item fixed acidity
+#'   \item volatile acidity
+#'   \item citric acid
+#'   \item residual sugar
+#'   \item chlorides
+#'   \item free sulfur dioxide
+#'   \item total sulfur dioxide
+#'   \item density
+#'   \item ph
+#'   \item sulphates
+#'   \item alcohol: Output variable (based on sensory data)
+#'   \item quality: (score between 0 and 10)
+#' }
+#'
+#' @details
+#' These datasets can be viewed as classification or regression tasks. The
+#' classes are ordered and not balanced (e.g. there are munch more normal wines
+#' than excellent or poor ones). Outlier detection algorithms could be used to
+#' detect the few excellent or poor wines. Also, we are not sure if all input
+#' variables are relevant. So it could be interesting to test feature selection
+#' methods.
+#'
+#' @references
+#' P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine
+#' preferences by data mining from physicochemical properties.
+#' In Decision Support Systems, Elsevier, 47(4):547-553, 2009.
+#'
+#' https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/
+#'
+#' https://archive.ics.uci.edu/ml/datasets/Wine+Quality
+#'
+#' http://www3.dsi.uminho.pt/pcortez/wine/
+#'
+#' @source
+#' P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
+#' Modeling wine preferences by data mining from physicochemical properties. In
+#' Decision Support Systems, Elsevier, 47(4):547-553, 2009.
+#' '@'2009
+"wine_quality"

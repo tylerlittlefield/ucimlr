@@ -1,0 +1,29 @@
+destination: docs
+template:
+  params:
+    bootswatch: lumen
+
+reference:
+- title: Datasets
+  desc: ~
+  contents:
+  - '`abalone`'
+  - '`adult`'
+  - '`annealing`'
+  - '`auto_mpg`'
+  - '`automobile`'
+  - '`badges`'
+  - '`car_eval`'
+  - '`cpu`'
+  - '`forest_fires`'
+  - '`liver`'
+  - '`meta`'
+  - '`parkinsons`'
+  - '`travel_review_ratings`'
+  - '`wine`'
+  - '`wine_quality`'
+- title: Functions
+  desc: ~
+  contents:
+  - '`ucidata`'
+  - '`ucinews`'

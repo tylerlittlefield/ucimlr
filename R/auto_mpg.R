@@ -1,0 +1,40 @@
+#' Auto MPG
+#'
+#' This dataset is a slightly modified version of the dataset provided in the
+#' StatLib library. In line with the use by Ross Quinlan (1993) in predicting
+#' the attribute "mpg", 8 of the original instances were removed because they
+#' had unknown values for the "mpg" attribute. The original dataset is available
+#' in the file "auto-mpg.data-original". "The data concerns city-cycle fuel
+#' consumption in miles per gallon, to be predicted in terms of 3 multivalued
+#' discrete and 5 continuous attributes." (Quinlan, 1993)
+#'
+#' @format A data frame with 398 observations on the following 8 variables.
+#' \enumerate{
+#'   \item mpg
+#'   \item cylinders
+#'   \item displacement
+#'   \item horsepower
+#'   \item weight
+#'   \item acceleration
+#'   \item model year
+#'   \item origin
+#'   \item car name
+#' }
+#'
+#' @details
+#' Revised from CMU StatLib library, data concerns city-cycle fuel consumption.
+#'
+#' @references
+#' Quinlan,R. (1993). Combining Instance-Based and Model-Based Learning. In
+#' Proceedings on the Tenth International Conference of Machine Learning,
+#' 236-243, University of Massachusetts, Amherst. Morgan Kaufmann.
+#'
+#' https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/
+#'
+#' https://archive.ics.uci.edu/ml/datasets/Auto+MPG
+#'
+#' @source
+#' This dataset was taken from the StatLib library which is maintained at
+#' Carnegie Mellon University. The dataset was used in the 1983 American
+#' Statistical Association Exposition.
+"auto_mpg"

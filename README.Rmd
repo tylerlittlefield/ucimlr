@@ -1,0 +1,68 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+
+# need to run un-exported internal function: pkg_size()
+devtools::load_all()
+
+# total ucimlr datasets
+datasets <- data(package = "ucimlr")
+total_datasets_names <- datasets$results[, "Item"]
+dataset_names <- glue::glue("* `{total_datasets_names}` \n")
+total_datasets <- length(datasets$results[, "Item"])
+```
+
+# ucimlr <img src="man/figures/logo-inter-ui.png" align="right" height=150/>
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of `ucimlr` is to give R users easy access to datasets found at the **U**niversity of **I**rvine's **M**achine **L**earning **R**epository. The benefits of using this package are:
+
+1. Ease of access
+2. Clean data
+
+Note that data in this repository dates back to 1987, the format across datasets are not consistent. Some inconsistencies include column separation and the way NA values are handled. Luckily, data in `ucimlr` follows a consistent structure that any R user can dive into. The structure is as follows:
+
+1. All variations of NA (null, blank character, ?, etc) are coded as NA
+2. All variables are snake case
+3. Everything is `stringAsFactors = FALSE`
+
+Currently, there are `r nrow(ucimlr::ucidata())` datasets available at the official repository and `r total_datasets` available in `ucimlr`. These numbers update every time the README.Rmd is reknit.
+
+## Installation
+
+Keep in mind that this is a data package and as of now the package is ~`r ucimlr::pkg_size()`. You can install `ucimlr` from GitHub with [`devtools`](https://github.com/r-lib/devtools):
+
+``` r
+# install.packages("devtools")
+devtools::install_github("tyluRp/ucimlr")
+```
+
+## Example
+
+We can load data by name and we can scrape the current list of datasets using the `ucidata` function:
+
+```{r example}
+library(ucimlr)
+
+automobile
+
+ucidata()
+```
+
+I'd suggest loading data using R's `::` so that you can access all exported variables without loading the package. This will prevent any namespace collisions and have an additional benefit of autopopulating all the datasets and functions (assuming you're using RStudio). Alternatively, to see a list of all available datasets you can run: `data(package = "ucimlr")`
+
+## Contributing
+
+There are a lot of datasets and I'm slowly adding as many as I can. If you'd like to add a dataset, fix something, suggest an improvement, etc., please file an issue or submit a pull request!

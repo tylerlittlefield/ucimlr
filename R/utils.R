@@ -1,4 +1,7 @@
-# to calculate size of package and report size in README.md
+# Check Package Size
+#
+# This function is used to calculate size of package and report size in
+# README.md
 pkg_size <- function() {
   files <- list.files(".", all.files = TRUE, recursive = TRUE)
   files_info <- file.info(files)

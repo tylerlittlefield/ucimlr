@@ -2,6 +2,7 @@ destination: docs
 template:
   params:
     bootswatch: lumen
+    ganalytics: UA-106175087-4
 
 reference:
 - title: Datasets

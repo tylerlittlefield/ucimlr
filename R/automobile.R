@@ -15,7 +15,7 @@
 #' classification (two-door small, station wagons, sports/speciality, etc...),
 #' and represents the average loss per car per year.
 #'
-#' -- Note: Several of the attributes in the database could be used as a
+#' Note: Several of the attributes in the database could be used as a
 #' "class" attribute.
 #'
 #' @format A data frame with 205 observations on the following 26 variables.

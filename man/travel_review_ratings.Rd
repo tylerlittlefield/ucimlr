@@ -50,10 +50,9 @@ considered. Google user rating ranges from 1 to 5 and average user rating
 per category is calculated.
 }
 \references{
-Renjith, Shini, A. Sreekumar, and M. Jathavedan. 2018. â€œEvaluation of
+Renjith, Shini, A. Sreekumar, and M. Jathavedan. 2018. Evaluation of
 Partitioning Clustering Algorithms for Processing Social Media Data in
-Tourism Domainâ€. In 2018 IEEE Recent Advances in Intelligent Computational
-Systems (RAICS), 127â€“31. IEEE.
+Tourism Domaina.
 
 https://archive.ics.uci.edu/ml/machine-learning-databases/00485/
 

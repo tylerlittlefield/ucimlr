@@ -54,7 +54,7 @@ annealing
 }
 \description{
 Explanation: I suspect this was left by Ross Quinlan in 1987 at the
-4th Machine Learning Workshop.  I'd have to check with Jeff Schlimmer
+4th Machine Learning Workshop. I'd have to check with Jeff Schlimmer
 to double check this.
 }
 \details{

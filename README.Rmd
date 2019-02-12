@@ -25,6 +25,7 @@ total_datasets <- length(datasets$results[, "Item"])
 [![Travis build status](https://travis-ci.org/tyluRp/ucimlr.svg?branch=master)](https://travis-ci.org/tyluRp/ucimlr)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/tyluRp/ucimlr?branch=master&svg=true)](https://ci.appveyor.com/project/tyluRp/ucimlr)
 [![Codecov test coverage](https://codecov.io/gh/tyluRp/ucimlr/branch/master/graph/badge.svg)](https://codecov.io/gh/tyluRp/ucimlr?branch=master)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ae8ab755-9460-4891-883c-6820d7e52158/deploy-status)](https://app.netlify.com/sites/ucimlr/deploys)
 <!-- badges: end -->
 
 The goal of `ucimlr` is to give R users easy access to datasets found at the [**U**niversity of **I**rvine's **M**achine **L**earning **R**epository](https://archive.ics.uci.edu/ml/index.php). The benefits of using this package are:

@@ -33,15 +33,18 @@ structure is as follows:
 2.  All variables are snake case
 3.  Everything is `stringAsFactors = FALSE`
 
+Note on point 3: Factors aren’t evil, but I’d rather the user decide
+when to code something as factor or not.
+
 Currently, there are 468 datasets available at the official repository
 and 19 available in `ucimlr`. These numbers update every time the
 README.Rmd is reknit.
 
 ## Installation
 
-Keep in mind that this is a data package and as of now the package is
-~4.93 MB. You can install `ucimlr` from GitHub with
-[`devtools`](https://github.com/r-lib/devtools):
+Keep in mind that this is a data package. As of now the package is ~4.94
+MB and it will continue to grow. You can install `ucimlr` from GitHub
+with [`devtools`](https://github.com/r-lib/devtools):
 
 ``` r
 # install.packages("devtools")

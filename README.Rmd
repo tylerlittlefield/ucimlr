@@ -39,11 +39,13 @@ Note that data in this repository dates back to 1987, the format across datasets
 2. All variables are snake case
 3. Everything is `stringAsFactors = FALSE`
 
+Note on point 3: Factors aren't evil, but I'd rather the user decide when to code something as factor or not.
+
 Currently, there are `r nrow(ucimlr::ucidata())` datasets available at the official repository and `r total_datasets` available in `ucimlr`. These numbers update every time the README.Rmd is reknit.
 
 ## Installation
 
-Keep in mind that this is a data package and as of now the package is ~`r ucimlr:::pkg_size()`. You can install `ucimlr` from GitHub with [`devtools`](https://github.com/r-lib/devtools):
+Keep in mind that this is a data package. As of now the package is ~`r ucimlr:::pkg_size()` and it will continue to grow. You can install `ucimlr` from GitHub with [`devtools`](https://github.com/r-lib/devtools):
 
 ``` r
 # install.packages("devtools")

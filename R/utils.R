@@ -1,11 +1,12 @@
 # Check Package Size
 #
+# Thanks to Alan Dipert for the help with this one.
+#
 # This function is used to calculate size of package and report size in
 # README.md
-pkg_size <- function() {
-  files <- list.files(".", all.files = TRUE, recursive = TRUE)
-  files_info <- file.info(files)
-  pkg_size_bytes <- round(sum(files_info$size) / 1e6, 2)
-  pkg_size_mb <- paste0(pkg_size_bytes, " MB")
-  return(pkg_size_mb)
+pkg_size <- function(package) {
+  root <- find.package(package)
+  rel_paths <- list.files(root, all.files = TRUE, recursive = TRUE)
+  abs_paths <- file.path(root, rel_paths)
+  paste0(round(sum(file.info(abs_paths)$size) / 1e6, 2), " MB")
 }

@@ -45,7 +45,7 @@ Currently, there are `r nrow(ucimlr::ucidata())` datasets available at the offic
 
 ## Installation
 
-Keep in mind that this is a data package. As of now the package is ~`r ucimlr:::pkg_size()` and it will continue to grow. You can install `ucimlr` from GitHub with [`devtools`](https://github.com/r-lib/devtools):
+Keep in mind that this is a data package. As of now the package is ~`r ucimlr:::pkg_size("ucimlr")` and it will continue to grow. You can install `ucimlr` from GitHub with [`devtools`](https://github.com/r-lib/devtools):
 
 ``` r
 # install.packages("devtools")

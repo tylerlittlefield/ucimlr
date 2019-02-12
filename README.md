@@ -42,9 +42,9 @@ README.Rmd is reknit.
 
 ## Installation
 
-Keep in mind that this is a data package. As of now the package is ~4.94
-MB and it will continue to grow. You can install `ucimlr` from GitHub
-with [`devtools`](https://github.com/r-lib/devtools):
+Keep in mind that this is a data package. As of now the package is ~2 MB
+and it will continue to grow. You can install `ucimlr` from GitHub with
+[`devtools`](https://github.com/r-lib/devtools):
 
 ``` r
 # install.packages("devtools")

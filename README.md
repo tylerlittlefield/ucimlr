@@ -37,7 +37,7 @@ Note on point 3: Factors aren’t evil, but I’d rather the user decide
 when to code something as factor or not.
 
 Currently, there are 468 datasets available at the official repository
-and 19 available in `ucimlr`. These numbers update every time the
+and 20 available in `ucimlr`. These numbers update every time the
 README.Rmd is reknit.
 
 ## Installation

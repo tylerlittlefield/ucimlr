@@ -32,6 +32,8 @@ structure is as follows:
 1.  All variations of NA (null, blank character, ?, etc) are coded as NA
 2.  All variables are snake case
 3.  Everything is `stringAsFactors = FALSE`
+4.  All datasets are presented as a
+    [`tibble`](https://github.com/tidyverse/tibble)
 
 Note on point 3: Factors aren’t evil, but I’d rather the user decide
 when to code something as factor or not.

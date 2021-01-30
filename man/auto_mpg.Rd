@@ -4,7 +4,8 @@
 \name{auto_mpg}
 \alias{auto_mpg}
 \title{Auto MPG}
-\format{A data frame with 398 observations on the following 8 variables.
+\format{
+A data frame with 398 observations on the following 8 variables.
 \enumerate{
   \item mpg
   \item cylinders
@@ -15,7 +16,8 @@
   \item model year
   \item origin
   \item car name
-}}
+}
+}
 \source{
 This dataset was taken from the StatLib library which is maintained at
 Carnegie Mellon University. The dataset was used in the 1983 American

@@ -4,7 +4,8 @@
 \name{flags}
 \alias{flags}
 \title{Flags}
-\format{A data frame with 194 observations on the following 30 variables.
+\format{
+A data frame with 194 observations on the following 30 variables.
 \enumerate{
   \item name:	Name of the country concerned
   \item landmass:	1=N.America, 2=S.America, 3=Europe, 4=Africa, 4=Asia, 6=Oceania
@@ -36,7 +37,8 @@
   \item text: 1 if any letters or writing on the flag (e.g., a motto or slogan), 0 otherwise
   \item topleft: colour in the top-left corner (moving right to decide tie-breaks)
   \item botright: Colour in the bottom-left corner (moving left to decide tie-breaks)
-}}
+}
+}
 \source{
 Creators: Collected primarily from the "Collins Gem Guide to Flags": Collins Publishers (1986).
 

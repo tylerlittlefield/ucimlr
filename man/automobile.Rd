@@ -4,7 +4,8 @@
 \name{automobile}
 \alias{automobile}
 \title{Automobile}
-\format{A data frame with 205 observations on the following 26 variables.
+\format{
+A data frame with 205 observations on the following 26 variables.
 \enumerate{
   \item symboling
   \item normalized-losses
@@ -32,7 +33,8 @@
   \item city-mpg
   \item highway-mpg
   \item price
-}}
+}
+}
 \source{
 \itemize{
   \item Creator/Donor: Jeffrey C. Schlimmer (Jeffrey.Schlimmer@a.gp.cs.cmu.edu)

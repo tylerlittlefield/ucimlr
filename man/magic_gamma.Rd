@@ -4,7 +4,8 @@
 \name{magic_gamma}
 \alias{magic_gamma}
 \title{MAGIC Gamma Telescope}
-\format{A data frame with 19020 observations on the following 11 variables.
+\format{
+A data frame with 19020 observations on the following 11 variables.
 \enumerate{
   \item fLength:  continuous  # major axis of ellipse [mm]
   \item fWidth:   continuous  # minor axis of ellipse [mm]
@@ -17,7 +18,8 @@
   \item fAlpha:   continuous  # angle of major axis with vector to origin [deg]
   \item fDist:    continuous  # distance from origin to center of ellipse [mm]
   \item class:    g,h         # gamma (signal), hadron (background)
-}}
+}
+}
 \source{
 Original owner of the database:
 

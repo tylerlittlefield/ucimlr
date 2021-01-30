@@ -4,11 +4,13 @@
 \name{badges}
 \alias{badges}
 \title{Badges}
-\format{A data frame with 294 observations on the following 2 variables.
+\format{
+A data frame with 294 observations on the following 2 variables.
 \enumerate{
   \item badge
   \item name
-}}
+}
+}
 \source{
 \itemize{
   \item Creator: Haym Hirsh, after an idea by Rob Schapire

@@ -4,7 +4,8 @@
 \name{abalone}
 \alias{abalone}
 \title{Abalone}
-\format{A data frame with 4177 observations on the following 9 variables.
+\format{
+A data frame with 4177 observations on the following 9 variables.
 \enumerate{
   \item Sex
   \item Length
@@ -15,7 +16,8 @@
   \item Viscera weight
   \item Shell weight
   \item Rings
-}}
+}
+}
 \source{
 Marine Resources Division
 Marine Research Laboratories - Taroona

@@ -4,7 +4,8 @@
 \name{congress84}
 \alias{congress84}
 \title{Congressional Voting Records}
-\format{A data frame with 435 observations on the following 17 variables.
+\format{
+A data frame with 435 observations on the following 17 variables.
 \enumerate{
   \item Class Name: 2 (democrat, republican)
   \item handicapped-infants: 2 (y,n)
@@ -23,7 +24,8 @@
   \item crime: 2 (y,n)
   \item duty-free-exports: 2 (y,n)
   \item export-administration-act-south-africa: 2 (y,n)
-}}
+}
+}
 \source{
 Origin: Congressional Quarterly Almanac, 98th Congress, 2nd session 1984,
 Volume XL: Congressional Quarterly Inc. Washington, D.C., 1985.

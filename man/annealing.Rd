@@ -4,7 +4,8 @@
 \name{annealing}
 \alias{annealing}
 \title{Annealing}
-\format{A data frame with 798 observations on the following 39 variables.
+\format{
+A data frame with 798 observations on the following 39 variables.
 \enumerate{
 \item family
 \item product-type
@@ -45,7 +46,8 @@
 \item bore
 \item packing
 \item classes
-}}
+}
+}
 \source{
 David Sterling and Wray Buntine
 }

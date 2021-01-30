@@ -4,7 +4,8 @@
 \name{liver}
 \alias{liver}
 \title{Liver}
-\format{A data frame with 345 observations on the following 7 variables.
+\format{
+A data frame with 345 observations on the following 7 variables.
 \enumerate{
   \item mcv:	mean corpuscular volume
   \item alkphos:	alkaline phosphotase
@@ -13,7 +14,8 @@
   \item gammagt: gamma-glutamyl transpeptidase
   \item drinks: number of half-pint equivalents of alcoholic beverages drunk per day
   \item selector: field used to split data into two sets
-}}
+}
+}
 \source{
 \enumerate{
   \item Creators: BUPA Medical Research Ltd.

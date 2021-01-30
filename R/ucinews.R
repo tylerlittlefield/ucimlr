@@ -21,7 +21,7 @@
 #' @export
 ucinews <- function(quiet = FALSE) {
   if(!quiet)
-    message("Scraping news from: https://archive.ics.uci.edu/ml/index.php")
+    message("* Scraping news from <https://archive.ics.uci.edu/ml/index.php>")
 
   root <- "https://archive.ics.uci.edu/ml/index.php"
   root <- xml2::read_html(root)

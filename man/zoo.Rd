@@ -4,7 +4,8 @@
 \name{zoo}
 \alias{zoo}
 \title{Zoo}
-\format{A data frame with 101 observations on the following 18 variables.
+\format{
+A data frame with 101 observations on the following 18 variables.
 \enumerate{
   \item animal name:      Unique for each instance
   \item hair:		Boolean
@@ -24,7 +25,8 @@
   \item domestic:		Boolean
   \item catsize:		Boolean
   \item type:		Numeric (integer values in range [1,7], see details)
-}}
+}
+}
 \source{
 Creator: Richard Forsyth
 

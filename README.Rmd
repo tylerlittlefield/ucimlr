@@ -63,6 +63,8 @@ library(ucimlr)
 automobile
 
 ucidata()
+
+ucinews()
 ```
 
 I'd suggest loading data using R's `::` so that you can access all exported variables without loading the package. This will prevent any namespace collisions and have an additional benefit of autopopulating all the datasets and functions (assuming you're using RStudio). Alternatively, to see a list of all available datasets you can run: `data(package = "ucimlr")`

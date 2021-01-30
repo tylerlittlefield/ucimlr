@@ -4,7 +4,8 @@
 \name{wine}
 \alias{wine}
 \title{Wine}
-\format{A data frame with 178 observations on the following 14 variables.
+\format{
+A data frame with 178 observations on the following 14 variables.
 \enumerate{
   \item Type: The type of wine, into one of three classes, 1 (59 obs), 2(71 obs), and 3 (48 obs).
   \item Alcohol
@@ -20,7 +21,8 @@
   \item Hue
   \item Dilution: D280/OD315 of diluted wines
   \item Proline
-}}
+}
+}
 \source{
 Original Owners:
 Forina, M. et al, PARVUS -

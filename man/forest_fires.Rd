@@ -4,7 +4,8 @@
 \name{forest_fires}
 \alias{forest_fires}
 \title{Forest Fires}
-\format{A data frame with 517 observations on the following 13 variables.
+\format{
+A data frame with 517 observations on the following 13 variables.
 \enumerate{
   \item x: x-axis spatial coordinate within the Montesinho park map: 1 to 9
   \item y: y-axis spatial coordinate within the Montesinho park map: 2 to 9
@@ -21,7 +22,8 @@
   \item area: the burned area of the forest (in ha): 0.00 to 1090.84 (this
   output variable is very skewed towards 0.0, thus it may make sense to
   model with the logarithm transform).
-}}
+}
+}
 \source{
 Created by: Paulo Cortez and Anibal Morais (Univ. Minho) @ 2007
 }

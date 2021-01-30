@@ -4,7 +4,8 @@
 \name{parkinsons}
 \alias{parkinsons}
 \title{Parkinsons}
-\format{A data frame with 5875 observations on the following 22 variables.
+\format{
+A data frame with 5875 observations on the following 22 variables.
 \enumerate{
   \item subject: Integer that uniquely identifies each subject
   \item age: Subject age
@@ -28,7 +29,8 @@
   \item rpde: Recurrence Period Density Entropy
   \item dfa: Detrended Fluctuation Analysis
   \item ppe: Pitch Period Entropy
-}}
+}
+}
 \source{
 The dataset was created by Athanasios Tsanas (tsanasthanasis '@' gmail.com)
 and Max Little (littlem '@' physics.ox.ac.uk) of the University of Oxford, in

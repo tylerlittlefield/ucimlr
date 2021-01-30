@@ -3,7 +3,8 @@
 \name{ucidata}
 \alias{ucidata}
 \title{Current UCI Datasets}
-\format{\enumerate{
+\format{
+\enumerate{
   \item Name: The name of the dataset.
   \item Type: Multivariate, time-series, etc.
   \item Task: Classification, regression, etc.
@@ -11,13 +12,15 @@
   \item Observations: Number of rows
   \item Variables: Number of columns
   \item Year: The year the dataset was donated
-}}
+}
+}
 \usage{
-ucidata(quiet = FALSE)
+ucidata(result = "raw", url = "https://archive.ics.uci.edu/ml/datasets.php")
 }
 \arguments{
-\item{quiet}{If TRUE, a message informs the user where current UCI data is
-coming from. If FALSE, no message is displayed. Defaults to FALSE.}
+\item{result}{One of raw, nest, or flat.}
+
+\item{url}{The URL that points to the UCIMLR dataset table.}
 }
 \description{
 This function scrapes data from UCI's Machine Learning repository.

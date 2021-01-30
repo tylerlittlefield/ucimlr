@@ -4,7 +4,8 @@
 \name{cpu}
 \alias{cpu}
 \title{Relative CPU Performance Data}
-\format{A data frame with 209 observations on the following 10 variables.
+\format{
+A data frame with 209 observations on the following 10 variables.
 \enumerate{
   \item vendor: 30 (adviser, amdahl,apollo, basf, bti, burroughs, c.r.d,
   cambex, cdc, dec,   dg, formation, four-phase, gould, honeywell, hp, ibm,
@@ -19,7 +20,8 @@
   \item CHMAX: maximum channels in units (integer)
   \item PRP: published relative performance (integer)
   \item ERP: estimated relative performance from the original article (integer)
-}}
+}
+}
 \source{
 Creators:
 Phillip Ein-Dor and Jacob Feldmesser

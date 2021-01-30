@@ -16,38 +16,56 @@
 #' }
 #'
 #'
-#' @param quiet If TRUE, a message informs the user where current UCI data is
-#' coming from. If FALSE, no message is displayed. Defaults to FALSE.
+#' @param result One of raw, nest, or flat.
+#' @param url The URL that points to the UCIMLR dataset table.
 #' @importFrom rvest html_nodes html_table
 #' @importFrom xml2 read_html
 #' @importFrom tibble as_tibble
-#'
+#' @importFrom tidyr nest separate_rows
 #' @references \url{https://archive.ics.uci.edu/ml/datasets.html}
 #' @export
-ucidata <- function(quiet = FALSE) {
-  if(!quiet)
-    message("Scraping datasets from: https://archive.ics.uci.edu/ml/datasets.html")
+ucidata <- function(
+  result = "raw",
+  url = "https://archive.ics.uci.edu/ml/datasets.php"
+) {
+  message("* Scraping datasets from <", url, ">")
 
-  root <- "https://archive.ics.uci.edu/ml/datasets.html"
+  var_names <- c(
+    "name",
+    "type",
+    "task",
+    "variable_types",
+    "observations",
+    "variables",
+    "year"
+  )
 
-  var_names <- c("name",
-                 "type",
-                 "task",
-                 "variable_types",
-                 "observations",
-                 "variables",
-                 "year")
+  x <- read_html(url)
+  x <- html_nodes(x, xpath = "//table")
+  x <- x[6:length(x)]
+  x <- html_table(x, header = TRUE, fill = TRUE)[[1]]
+  x <- x[x$Name != "", ]
+  x <- x[,3:9]
+  colnames(x) <- var_names
+  x[x==""] <- NA
+  x <- as_tibble(x)
 
-  root <- xml2::read_html(root)
-  root <- rvest::html_nodes(root, xpath = "//table")
-  root <- root[6:length(root)]
-  root <- rvest::html_table(root,header = TRUE, fill = TRUE)[[1]]
-  root <- root[root$Name != "", ]
-  root <- root[,3:9]
-  colnames(root) <- var_names
-  root[root==""] <- NA
-  ucidata <- tibble::as_tibble(root)
-  rm(root)
-
-  return(ucidata)
+  switch (result,
+    "raw" = x,
+    "nest" = {
+      x %>%
+        separate_rows(variable_types, sep = ", ") %>%
+        nest(variable_types = variable_types) %>%
+        separate_rows(type, sep = ", ") %>%
+        nest(type = type) %>%
+        separate_rows(task, sep = ", ") %>%
+        nest(task = task)
+    },
+    "flat" = {
+      x %>%
+        separate_rows(variable_types, sep = ", ") %>%
+        separate_rows(type, sep = ", ") %>%
+        separate_rows(task, sep = ", ")
+    }
+  )
 }

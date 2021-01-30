@@ -4,7 +4,8 @@
 \name{travel_review_ratings}
 \alias{travel_review_ratings}
 \title{Travel Review Ratings}
-\format{A data frame with 5456 observations on the following 25 variables.
+\format{
+A data frame with 5456 observations on the following 25 variables.
 \enumerate{
   \item user id
   \item churches
@@ -31,7 +32,8 @@
   \item view points
   \item monuments
   \item gardens
-}}
+}
+}
 \source{
 Shini Renjith, shinirenjith '@' gmail.com
 }

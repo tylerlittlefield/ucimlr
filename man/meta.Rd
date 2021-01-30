@@ -4,7 +4,8 @@
 \name{meta}
 \alias{meta}
 \title{Meta}
-\format{A data frame with 528 observations on the following 22 variables.
+\format{
+A data frame with 528 observations on the following 22 variables.
 \enumerate{
   \item DS_Name
   \item T
@@ -28,7 +29,8 @@
   \item NSRatio
   \item Alg_Name
   \item Norm_error
-}}
+}
+}
 \source{
 \enumerate{
   \item Creator: LIACC - University of Porto R.Campo Alegre 823 4150 PORTO

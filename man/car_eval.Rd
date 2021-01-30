@@ -4,7 +4,8 @@
 \name{car_eval}
 \alias{car_eval}
 \title{Car Evaluation}
-\format{A data frame with 1728 observations on the following 7 variables.
+\format{
+A data frame with 1728 observations on the following 7 variables.
 \enumerate{
   \item buying
   \item maint
@@ -13,7 +14,8 @@
   \item lug_boot
   \item safety
   \item class
-}}
+}
+}
 \source{
 Creator:
 Marko Bohanec

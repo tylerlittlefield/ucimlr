@@ -4,7 +4,8 @@
 \name{wine_quality}
 \alias{wine_quality}
 \title{Wine Quality}
-\format{A data frame with 6497 observations on the following 13 variables.
+\format{
+A data frame with 6497 observations on the following 13 variables.
 \enumerate{
   \item fixed acidity
   \item volatile acidity
@@ -18,7 +19,8 @@
   \item sulphates
   \item alcohol: Output variable (based on sensory data)
   \item quality: (score between 0 and 10)
-}}
+}
+}
 \source{
 P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
 Modeling wine preferences by data mining from physicochemical properties. In

@@ -38,15 +38,15 @@ structure is as follows:
 Note on point 3: Factors aren’t evil, but I’d rather the user decide
 when to code something as factor or not.
 
-Currently, there are 468 datasets available at the official repository
+Currently, there are 559 datasets available at the official repository
 and 20 available in `ucimlr`. These numbers update every time the
 README.Rmd is reknit.
 
 ## Installation
 
-Keep in mind that this is a data package. As of now the package is ~2 MB
-and it will continue to grow. You can install `ucimlr` from GitHub with
-[`devtools`](https://github.com/r-lib/devtools):
+Keep in mind that this is a data package. As of now the package is
+\~2.01 MB and it will continue to grow. You can install `ucimlr` from
+GitHub with [`devtools`](https://github.com/r-lib/devtools):
 
 ``` r
 # install.packages("devtools")
@@ -63,42 +63,54 @@ library(ucimlr)
 
 automobile
 #> # A tibble: 205 x 26
-#>    symboling normalized_loss… make  fuel_type aspiration num_of_doors
-#>        <int>            <int> <chr> <chr>     <chr>      <chr>       
-#>  1         3               NA alfa… gas       std        two         
-#>  2         3               NA alfa… gas       std        two         
-#>  3         1               NA alfa… gas       std        two         
-#>  4         2              164 audi  gas       std        four        
-#>  5         2              164 audi  gas       std        four        
-#>  6         2               NA audi  gas       std        two         
-#>  7         1              158 audi  gas       std        four        
-#>  8         1               NA audi  gas       std        four        
-#>  9         1              158 audi  gas       turbo      four        
-#> 10         0               NA audi  gas       turbo      two         
-#> # … with 195 more rows, and 20 more variables: body_style <chr>,
-#> #   drive_wheels <chr>, engine_location <chr>, wheel_base <dbl>,
-#> #   length <dbl>, width <dbl>, height <dbl>, curb_weight <int>,
-#> #   engine_type <chr>, num_of_cylinders <chr>, engine_size <int>,
-#> #   fuel_system <chr>, bore <dbl>, stroke <dbl>, compression_ratio <dbl>,
-#> #   horsepower <int>, peak_rpm <int>, city_mpg <int>, highway_mpg <int>,
-#> #   price <int>
+#>    symboling normalized_loss… make  fuel_type aspiration num_of_doors body_style
+#>        <int>            <int> <chr> <chr>     <chr>      <chr>        <chr>     
+#>  1         3               NA alfa… gas       std        two          convertib…
+#>  2         3               NA alfa… gas       std        two          convertib…
+#>  3         1               NA alfa… gas       std        two          hatchback 
+#>  4         2              164 audi  gas       std        four         sedan     
+#>  5         2              164 audi  gas       std        four         sedan     
+#>  6         2               NA audi  gas       std        two          sedan     
+#>  7         1              158 audi  gas       std        four         sedan     
+#>  8         1               NA audi  gas       std        four         wagon     
+#>  9         1              158 audi  gas       turbo      four         sedan     
+#> 10         0               NA audi  gas       turbo      two          hatchback 
+#> # … with 195 more rows, and 19 more variables: drive_wheels <chr>,
+#> #   engine_location <chr>, wheel_base <dbl>, length <dbl>, width <dbl>,
+#> #   height <dbl>, curb_weight <int>, engine_type <chr>, num_of_cylinders <chr>,
+#> #   engine_size <int>, fuel_system <chr>, bore <dbl>, stroke <dbl>,
+#> #   compression_ratio <dbl>, horsepower <int>, peak_rpm <int>, city_mpg <int>,
+#> #   highway_mpg <int>, price <int>
 
 ucidata()
-#> Scraping datasets from: https://archive.ics.uci.edu/ml/datasets.html
-#> # A tibble: 468 x 7
-#>    name       type    task    variable_types   observations variables  year
-#>    <chr>      <chr>   <chr>   <chr>                   <int>     <int> <int>
-#>  1 Abalone    Multiv… Classi… Categorical, In…         4177         8  1995
-#>  2 Adult      Multiv… Classi… Categorical, In…        48842        14  1996
-#>  3 Annealing  Multiv… Classi… Categorical, In…          798        38    NA
-#>  4 Anonymous… <NA>    Recomm… Categorical             37711       294  1998
-#>  5 Arrhythmia Multiv… Classi… Categorical, In…          452       279  1998
-#>  6 Artificia… Multiv… Classi… Categorical, In…         6000         7  1992
-#>  7 Audiology… Multiv… Classi… Categorical               226        NA  1987
-#>  8 Audiology… Multiv… Classi… Categorical               226        69  1992
-#>  9 Auto MPG   Multiv… Regres… Categorical, Re…          398         8  1993
-#> 10 Automobile Multiv… Regres… Categorical, In…          205        26  1987
-#> # … with 458 more rows
+#> * Scraping datasets from <https://archive.ics.uci.edu/ml/datasets.php>
+#> # A tibble: 559 x 7
+#>    name         type    task      variable_types    observations variables  year
+#>    <chr>        <chr>   <chr>     <chr>                    <int>     <int> <int>
+#>  1 Abalone      Multiv… Classifi… Categorical, Int…         4177         8  1995
+#>  2 Adult        Multiv… Classifi… Categorical, Int…        48842        14  1996
+#>  3 Annealing    Multiv… Classifi… Categorical, Int…          798        38    NA
+#>  4 Anonymous M… <NA>    Recommen… Categorical              37711       294  1998
+#>  5 Arrhythmia   Multiv… Classifi… Categorical, Int…          452       279  1998
+#>  6 Artificial … Multiv… Classifi… Categorical, Int…         6000         7  1992
+#>  7 Audiology (… Multiv… Classifi… Categorical                226        NA  1987
+#>  8 Audiology (… Multiv… Classifi… Categorical                226        69  1992
+#>  9 Auto MPG     Multiv… Regressi… Categorical, Real          398         8  1993
+#> 10 Automobile   Multiv… Regressi… Categorical, Int…          205        26  1987
+#> # … with 549 more rows
+
+ucinews()
+#> * Scraping news from <https://archive.ics.uci.edu/ml/index.php>
+#> # A tibble: 7 x 2
+#>   date       info                                                               
+#>   <date>     <chr>                                                              
+#> 1 2020-09-24 Welcome to the new Repository admins Dheeru Dua and Efi Karra Tani…
+#> 2 2020-04-04 Welcome to the new Repository admins Kevin Bache and Moshe Lichman!
+#> 3 2020-03-01 Note from donor regarding Netflix data                             
+#> 4 2020-10-16 Two new data sets have been added.                                 
+#> 5 2020-09-14 Several data sets have been added.                                 
+#> 6 2020-03-24 New data sets have been added!                                     
+#> 7 2020-06-25 Two new data sets have been added: UJI Pen Characters, MAGIC Gamma…
 ```
 
 I’d suggest loading data using R’s `::` so that you can access all
@@ -112,4 +124,4 @@ Alternatively, to see a list of all available datasets you can run:
 
 There are a lot of datasets and I’m slowly adding as many as I can. If
 you’d like to add a dataset, fix something, suggest an improvement,
-etc., please file an issue or submit a pull request\!
+etc., please file an issue or submit a pull request!

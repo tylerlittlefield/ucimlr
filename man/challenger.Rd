@@ -4,14 +4,16 @@
 \name{challenger}
 \alias{challenger}
 \title{Challenger USA Space Shuttle O-Rings}
-\format{A list containing 2 data frames with 23 observations on the following 5 variables.
+\format{
+A list containing 2 data frames with 23 observations on the following 5 variables.
 \enumerate{
   \item o_rings_at_risk: Number of O-rings at risk on a given flight
   \item thermal_distress: Number experiencing thermal distress
   \item launch_temp: Launch temperature (degrees F)
   \item leak_check_pressure: Leak-check pressure (psi)
   \item temporal_order_of_flight: Temporal order of flight
-}}
+}
+}
 \source{
 \itemize{
   \item David Draper (draper@math.ucla.edu) University of California, Los Angeles

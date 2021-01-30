@@ -3,10 +3,12 @@
 \name{ucinews}
 \alias{ucinews}
 \title{Latest UCI MLR News}
-\format{\enumerate{
+\format{
+\enumerate{
   \item Date: The date information was reported.
   \item Info: News description.
-}}
+}
+}
 \usage{
 ucinews(quiet = FALSE)
 }

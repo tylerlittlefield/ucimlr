@@ -4,7 +4,8 @@
 \name{adult}
 \alias{adult}
 \title{Adult}
-\format{A data frame with 32561 observations on the following 15 variables.
+\format{
+A data frame with 32561 observations on the following 15 variables.
 \enumerate{
   \item age
   \item workclass
@@ -20,7 +21,8 @@
   \item capital-loss
   \item hours-per-week
   \item native-country
-}}
+}
+}
 \source{
 Ronny Kohavi and Barry Becker
 Data Mining and Visualization
